@@ -1,0 +1,76 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.l2n.zxy" version="1.0.0">
+  <name>ZXY Mobile</name>
+  <description>A simple user directory application</description>
+  <author href="http://l2nsoft.com" email="roni.cse@gmail.com">Roni Saha</author>
+  <content src="index.html"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>
+  <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1"/>
+  <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0"/>
+  <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2"/>
+  <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1"/>
+  <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1"/>
+  <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0"/>
+  <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2"/>
+  <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0"/>
+  <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1"/>
+  <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.5.0"/>
+  <plugin name="cordova-plugin-geolocation" source="npm" spec="~2.1.0"/>
+  <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.3"/>
+  <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0"/>
+  <plugin name="cordova-plugin-media" source="npm" spec="~2.2.0"/>
+  <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0"/>
+  <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1"/>
+  <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2"/>
+  <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
+  <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+  <plugin name="cordova-plugin-screensize" source="npm" spec="~1.1.1"/>
+  <icon src="icon.png"/>
+  <platform name="android">
+    <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
+    <icon src="www/res/icon/android/drawable-mdpi-icon.png" density="mdpi"/>
+    <icon src="www/res/icon/android/drawable-hdpi-icon.png" density="hdpi"/>
+    <icon src="www/res/icon/android/drawable-xhdpi-icon.png" density="xhdpi"/>
+    <icon src="www/res/icon/android/drawable-xxhdpi-icon.png" density="xxhdpi"/>
+    <icon src="www/res/icon/android/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <splash src="www/res/screen/android/drawable-land-ldpi-screen.png" density="land-ldpi"/>
+    <splash src="www/res/screen/android/drawable-land-mdpi-screen.png" density="land-mdpi"/>
+    <splash src="www/res/screen/android/drawable-land-hdpi-screen.png" density="land-hdpi"/>
+    <splash src="www/res/screen/android/drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
+    <splash src="www/res/screen/android/drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
+    <splash src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
+    <splash src="www/res/screen/android/drawable-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="www/res/screen/android/drawable-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="www/res/screen/android/drawable-port-hdpi-screen.png" density="port-hdpi"/>
+    <splash src="www/res/screen/android/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+    <splash src="www/res/screen/android/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+    <splash src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="AutoHideSplashScreen" value="true" />
+  </platform>
+
+
+  <feature name="http://api.phonegap.com/1.0/camera"/>
+  <feature name="http://api.phonegap.com/1.0/contacts"/>
+  <feature name="http://api.phonegap.com/1.0/file"/>
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
+  <feature name="http://api.phonegap.com/1.0/media"/>
+  <feature name="http://api.phonegap.com/1.0/network"/>
+  <feature name="http://api.phonegap.com/1.0/notification"/>
+
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+</widget>
