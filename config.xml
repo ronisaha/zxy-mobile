@@ -25,7 +25,7 @@
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2"/>
   <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
-  <plugin name="cordova-plugin-screensize" source="npm" spec="~1.1.1"/>
+  <plugin name="cordova-plugin-sqlite-2" source="npm" spec="~1.0.4"/>
   <icon src="icon.png"/>
   <platform name="android">
     <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
